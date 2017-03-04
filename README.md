@@ -10,7 +10,7 @@ Make sure to add `novalidate` to your `<form>` tag:
 
 To style the `:invalid`/`:valid` states in CSS, prepend the selector with `.is-validated`, e.g.:
 
-```js
+```css
 .is-validated input:invalid {
   border-color: #f33;
 }
@@ -28,7 +28,7 @@ Include the `.js` file directly from the published GitHub Pages branch:
 
 ---
 
-License & copyright
+## License & copyright
 
 © 2017 Thomas J Bradley
-[Licensed under the MIT License](LICENSE)
+<br>[Licensed under the MIT License](LICENSE)
