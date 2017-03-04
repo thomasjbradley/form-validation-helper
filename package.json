@@ -1,0 +1,26 @@
+{
+  "name": "form-validation-helper",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Thomas J Bradley <hey@thomasjbradley.ca>",
+  "description": "Helps prevent the `:invalid`/`:valid` styles from showing until after the form has been submitted.",
+  "keywords": [
+    "html",
+    "forms",
+    "validation",
+    "invalid",
+    "submission",
+    "javascript",
+    "css"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasjbradley/form-validation-helper.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thomasjbradley/form-validation-helper/issues"
+  },
+  "homepage": "https://github.com/thomasjbradley/form-validation-helper#readme"
+}
