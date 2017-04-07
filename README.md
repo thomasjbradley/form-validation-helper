@@ -31,7 +31,7 @@ The setup is fairly simple, a few small HTML tweaks and you’ll be ready to sty
 Also the `data-state="invalid"` attribute will be added to the `<form>` tag when it hasn’t passed validation.
 
 ```html
-<form novalidate data-state="invalid">
+<form novalidate class="is-validated" data-state="invalid">
 ```
 
 ### One-of-many checkbox groups
