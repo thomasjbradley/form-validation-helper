@@ -28,10 +28,19 @@ The setup is fairly simple, a few small HTML tweaks and you’ll be ready to sty
 }
 ```
 
-Also the `data-state="invalid"` attribute will be added to the `<form>` tag when it hasn’t passed validation.
+Also the `data-state="invalid"` attribute will be added to the `<form>` tag when it hasn’t passed validation. (`data-state="valid"` when it has passed validation.)
 
 ```html
 <form novalidate class="is-validated" data-state="invalid">
+```
+
+If there is no `<form>` tag, only form field tags, the `data-state="invalid"` attribute & `.is-validated` class will be added directly to the `<input>` itself. So, the CSS would change a little, like this:
+
+```css
+.is-validated input:invalid,
+input.is-validated:invalid {
+  border-color: #f33;
+}
 ```
 
 ### One-of-many checkbox groups
@@ -59,5 +68,5 @@ We can use the `.one-of-many[data-state="invalid"]` selector to show the appropr
 
 ## License & copyright
 
-© 2017 Thomas J Bradley
+© 2018 Thomas J Bradley
 <br>[Licensed under the MIT License](LICENSE)
