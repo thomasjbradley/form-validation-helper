@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>One of many checkboxes</title>
+</head>
+<body>
+
+  <fieldset class="one-of-many">
+    <legend>Fruits you love: (select all that apply)</legend>
+    <div>
+      <input type="checkbox" id="apple">
+      <label for="apple">Apple</label>
+    </div>
+    <div>
+      <input type="checkbox" id="pear">
+      <label for="pear">Pear</label>
+    </div>
+    <div>
+      <input type="checkbox" id="starfruit">
+      <label for="starfruit">Starfruit</label>
+    </div>
+    <div>
+      <input type="checkbox" id="persimmon">
+      <label for="persimmon">Persimmon</label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Choose a shipping method</legend>
+
+    <div>
+      <input type="radio" id="regular" name="shipping" required>
+      <label for="regular">Regular</label>
+    </div>
+    <div>
+      <input type="radio" id="expedited" name="shipping" required>
+      <label for="expedited">Expedited</label>
+    </div>
+    <div>
+      <input type="radio" id="air" name="shipping" required>
+      <label for="air">Air</label>
+    </div>
+  </fieldset>
+
+  <script src="../index.js"></script>
+</body>
+</html>
