@@ -1,0 +1,6 @@
+extends:
+  - "eslint:recommended"
+  - prettier
+env:
+  browser: true
+  es2020: true
