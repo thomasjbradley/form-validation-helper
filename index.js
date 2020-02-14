@@ -1,6 +1,6 @@
 /**
  * @author Thomas J Bradley <https://thomasjbradley.ca>
- * @copyright © 2018 Thomas J Bradley
+ * @copyright © 2018–2020 Thomas J Bradley
  * @license MIT
  */
 (function() {
