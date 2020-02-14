@@ -11,7 +11,7 @@ The setup is fairly simple, a few small HTML tweaks and you’ll be ready to sty
 **1. Add `novalidate` to your `<form>` tag:**
 
 ```html
-<form novalidate>
+<form novalidate></form>
 ```
 
 **2. Include the `.js` file** directly from the published GitHub Pages branch:
@@ -28,10 +28,10 @@ The setup is fairly simple, a few small HTML tweaks and you’ll be ready to sty
 }
 ```
 
-Also the `data-state="invalid"` attribute will be added to the `<form>` tag when it hasn’t passed validation. (`data-state="valid"` when it has passed validation.)
+Also the `data-state="invalid"` attribute will be added to the `<form>` tag (and the `<input>`, `<textarea>` & `<select>` tags) when validation has failed. (`data-state="valid"` when validation passed.)
 
 ```html
-<form novalidate class="is-validated" data-state="invalid">
+<form novalidate class="is-validated" data-state="invalid"></form>
 ```
 
 If there is no `<form>` tag, only field tags, the `data-state="invalid"` attribute & `.is-validated` class will be added directly to the `<input>` itself. So, the CSS would change a little, like this:
@@ -59,7 +59,7 @@ To get basic checkbox group validation add the class `one-of-many` to the surrou
 When a checkbox hasn’t been selected the `<fieldset>` will receive a `data-state` attribute of `invalid`:
 
 ```html
-<fieldset class="one-of-many" data-state="invalid">
+<fieldset class="one-of-many" data-state="invalid"></fieldset>
 ```
 
 We can use the `.one-of-many[data-state="invalid"]` selector to show the appropriate error message to our users.
@@ -70,5 +70,5 @@ Similarly, when there isn’t a `<form>` this will also apply to groups of radio
 
 ## License & copyright
 
-© 2018 Thomas J Bradley
+© 2018–2020 Thomas J Bradley
 <br>[Licensed under the MIT License](LICENSE)
